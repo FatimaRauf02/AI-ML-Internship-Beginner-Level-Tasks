@@ -1,6 +1,5 @@
 # =============================================================================
-# Task 3: Heart Disease Prediction
-# DevelopersHub Corporation - AI/ML Engineering Internship
+# Task : Heart Disease Prediction
 # =============================================================================
 # Objective: Build a model to predict whether a person is at risk of heart
 # disease based on their health data.
