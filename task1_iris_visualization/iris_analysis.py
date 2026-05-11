@@ -6,20 +6,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-# ---------------------------
-# Load dataset
-# ---------------------------
-iris = sns.load_dataset("iris")
 
-# ---------------------------
-# Create output folder (IMPORTANT FIX)
-# ---------------------------
 output_dir = os.path.join(os.path.dirname(__file__), "outputs")
 os.makedirs(output_dir, exist_ok=True)
 
-# ---------------------------
-# 1. Basic Dataset Info
-# ---------------------------
+
 
 print("\n--- Dataset Shape ---")
 print(iris.shape)
@@ -36,9 +27,7 @@ iris.info()
 print("\n--- Statistical Summary ---")
 print(iris.describe())
 
-# ---------------------------
-# 2. Scatter Plot
-# ---------------------------
+
 
 plt.figure(figsize=(8, 5))
 
@@ -56,9 +45,7 @@ plt.ylabel("Petal Length")
 plt.savefig(os.path.join(output_dir, "scatter_plot.png"))
 plt.show()
 
-# ---------------------------
-# 3. Histograms
-# ---------------------------
+
 
 iris.hist(figsize=(10, 6))
 plt.suptitle("Feature Distributions")
@@ -66,9 +53,7 @@ plt.suptitle("Feature Distributions")
 plt.savefig(os.path.join(output_dir, "histograms.png"))
 plt.show()
 
-# ---------------------------
-# 4. Box Plot (Outliers)
-# ---------------------------
+
 
 plt.figure(figsize=(10, 5))
 
